@@ -32,3 +32,7 @@
     background-image: linear-gradient(to right, darkBlue , lightGrey);
     color: white;
 }
+
+a {
+  color: blue;
+}
