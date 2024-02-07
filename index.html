@@ -8,12 +8,15 @@
     <body>
         <div class="topBar">Google! - Microsoft  Internet Explorer</div>
         <div class="header"><a>File</a><a>Edit</a><a>View</a><a>Favorites</a><a>Tools</a><a>Help</a></div>
-        <div class="header"><textarea style="resize: none;" rows="1" cols="100">http://www.google.com</textarea></div>
+        <div class="header"><textarea placeholder="Search Google or type a URL" id="url" style="resize: none;" rows="1"
+         cols="100">http://www.google.com</textarea></div>
         
-        <br/><br/>
-        <div style="text-align: center; cursor: pointer;"><img src="img/logoGoogle.jpg" draggable="false"><br/>
-        <p>Search the web using Google!</p><input type="search"><br/><br/><button>Google Search</button>
-        <button>I'm Feeling Lucky</button></button></div>
+        <span id="content"><br/><br/>
+        <div style="text-align: center;"><img src="img/logoGoogle.jpg" draggable="false"><br/>
+        <form><p>Search the web using Google!</p><input id="input" type="search">
+        <br/><br/><button onclick="search()">Google Search</button>
+       <button onclick="lucky()">I'm Feeling Lucky</button></form></span>
 
     </body>
+    <script src="scripts.js"></script>
 </html>
