@@ -16,7 +16,7 @@ function search() {
     let input = document.getElementById('input').value
     if (input != "") {
     document.getElementById('content').innerHTML = demo;
-    document.getElementById('url').innerHTML = "http://www.google.com/search?q=" + input
+    document.getElementById('url').value = "http://www.google.com/search?q=" + input
     .replaceAll(" ", "+");
     }
 }
