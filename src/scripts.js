@@ -24,6 +24,6 @@ function search() {
 encodeUrl() {
     let url = document.getElementById('url').value
     if (!url.includes('http://')) {
-        document.getElementById('url').innerHTML = "http://www.google.com/search?q="+url.replaceAll(' ', '+');
+        document.getElementById('url').value = "http://www.google.com/search?q="+url.replaceAll(' ', '+');
     }
 }
