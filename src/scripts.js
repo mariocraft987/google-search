@@ -20,3 +20,10 @@ function search() {
     .replaceAll(" ", "+");
     }
 }
+
+encodeUrl() {
+    let url = document.getElementById('url').value
+    if (!url.includes('http://')) {
+        document.getElementById('url').innerHTML = "http://www.google.com/search?q="+url.replaceAll(' ', '+');
+    }
+}
