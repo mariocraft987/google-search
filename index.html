@@ -19,4 +19,12 @@
 
     </body>
     <script src="src/scripts.js"></script>
+    <script>
+            fetch('https://google-engine.vercel.app/static/sites.json')
+    .then(res => res.json()).then(data => {
+    obj = data;})
+  .then(() => {
+      console.log(obj.version)
+   });
+    </script>
 </html>
