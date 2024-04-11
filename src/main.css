@@ -27,11 +27,16 @@
   }
 
 .topBar {
+    font-family: "MS Sans Serif", Arial, sans-serif;
+    font-size: 12px;  /* Smaller default font size */
     height: 20px;
     background-color: darkBlue; /* For browsers that do not support gradients */
     background-image: linear-gradient(to right, darkBlue , lightGrey);
-    color: white;
+    color: #000;  /* Black text color */
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: none;
 }
+
 
 a {
   color: blue;
