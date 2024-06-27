@@ -1,30 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Google - 1998</title>
+        <title>Google Time Traveler</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/png">
         <link rel="stylesheet" href="src/main.css">
     </head>
     <body>
-        <div class="topBar">Google! - Microsoft  Internet Explorer</div>
-        <div class="header"><a>File</a><a>Edit</a><a>View</a><a>Favorites</a><a>Tools</a><a>Help</a></div>
-        <div class="header">adress:<input onfocusout="encodeUrl()" type="search" style="width:1200px;" id="url" placeholder="Search Google or type a URL" value="http://www.google.com"></input></div>
-        
-        <span id="content"><br/><br/>
-        <div style="text-align: center;"><img src="src/img/logoGoogle.jpg"><br/>
-        <form method="get"><p>Search the web using Google!</p><input id="input" type="search">
-        <br/><br/><button onclick="search()">Google Search</button>
-       <button onclick="lucky()">I'm Feeling Lucky</button></form></span>
-       <p>Google Time Traveler is licensed under <a href="https://github.com/mariocraft987/google-search/blob/main/LICENSE" target="_blank">The Boost Software License 1.0</a></p>
-
+        <span id="page"></span>
     </body>
     <script src="src/scripts.js"></script>
-    <script>
-            fetch('https://google-engine.vercel.app/static/sites.json')
-    .then(res => res.json()).then(data => {
-    obj = data;})
-  .then(() => {
-      console.log(obj.version)
-   });
-    </script>
 </html>
