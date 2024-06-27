@@ -1,0 +1,9 @@
+        <div class="topBar">Google! - Microsoft  Internet Explorer</div>
+        <div class="header"><a>File</a><a>Edit</a><a>View</a><a>Favorites</a><a>Tools</a><a>Help</a></div>
+        <div class="header">adress:<input onfocusout="encodeUrl()" type="search" style="width:1200px;" id="url" placeholder="Search Google or type a URL" value="http://www.google.com"></input></div>
+        
+        <span id="content"><br/><br/>
+        <div style="text-align: center;"><img src="src/img/logoGoogle.jpg"><br/>
+        <form method="get"><p>Search the web using Google!</p><input id="input" type="search">
+        <br/><br/><button onclick="search()">Google Search</button>
+       <button onclick="lucky()">I'm Feeling Lucky</button></form></span>
